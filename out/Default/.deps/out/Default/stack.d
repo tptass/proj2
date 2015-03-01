@@ -1,0 +1,1 @@
+cmd_out/Default/stack := flock out/Default/linker.lock g++ -m32 -static  -o out/Default/stack -Wl,--start-group out/Default/obj.target/stack/src/main.o -Wl,--end-group -lpthread -lboost_system -lboost_thread -lboost_filesystem -lboost_program_options
